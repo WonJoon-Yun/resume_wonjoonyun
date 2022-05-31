@@ -1,0 +1,270 @@
+\documentclass[10pt,letterpaper]{article}
+\reversemarginpar
+\usepackage[letterpaper,margin=0.25in]{geometry}
+\usepackage[usenames,dvipsnames]{color} % http://en.wikibooks.org/wiki/LaTeX/Colors
+\usepackage[shortlabels]{enumitem}
+\usepackage{etaremune}
+\usepackage{amssymb}
+
+% use UTF8 encoding
+\usepackage[utf8]{inputenc}
+% use KoTeX package for Korean 
+\usepackage{kotex}
+
+\makeatletter
+\newlength{\bibhang}
+\setlength{\bibhang}{1em}
+\newlength{\bibsep}
+ {\@listi \global\bibsep\itemsep \global\advance\bibsep by\parsep}
+\newlist{bibenum}{enumerate}{3}
+\setlist[bibenum]{label=[\arabic*],resume,leftmargin={\bibhang+\widthof{[999]}},%
+        itemindent=-\bibhang,
+        itemsep=\bibsep,parsep=0pt,partopsep=0pt,
+        topsep=0pt}
+
+\newenvironment{bibenum*}
+  {\renewcommand\labelenumi{[\theenumi]}%
+   \etaremune[
+     topsep=0pt,
+     itemsep=\bibsep,
+     parsep=0pt,partopsep=0pt,
+     itemindent=-\bibhang,
+     leftmargin={\bibhang+\widthof{[999]}}]}
+  {\endetaremune}
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+\usepackage{resume}
+
+\begin{document}
+\sloppy
+
+\maintitle{Won Joon Yun}{}{Last update on \today}
+\nobreakvspace{0.3em}
+
+
+%\noindent {\textbf{Senior Member of the IEEE}} \\
+\noindent \textit{Ph.D. Student}, Korea University -- Artificial Intelligence and Mobility Laboratory, Seoul, Republic of Korea
+%\\ \noindent \textit{Associate Editor}, IEEE Transactions on Vehicular Technology
+%\\ \noindent \textit{Vice Director}, Korea University -- Artificial Intelligence Engineering Research Center (AIERC), Seoul, Republic of Korea
+%\\ \noindent \textit{Director}, Korea University -- , Seoul, Republic of Korea
+
+
+\noindent \sbull Email: \noindent\href{mailto:ywjoon95@korea.ac.kr}{ywjoon95\mbox{}@\mbox{}korea.ac.kr}
+
+\noindent\sbull WWW: \url{https://www.wonjoonyun.com}
+
+\noindent\sbull Address: New Engineering Hall Unit 508, 145 Anam-ro, Seongbuk-gu, Seoul 02841, Republic of Korea
+
+\spacedhrule{0.5em}{-0.7em}
+\roottitle{Research Interests}
+
+\begin{itemize}\itemsep=-0.8mm
+    \item\textbf{Theorical background:} \begin{enumerate}
+        \item \textbf{Deep Learning Algorithms:} Deep reinforcement learning, Learning representation, Distributed learning (Federated learning \& Split learning), Efficient artificial intelligence (EAI)
+        \item \textbf{Stochastic Optimization:} Reinforcement learning (RL), Multi-agent reinforcement learning (MARL), Hierarchical reinforcement learning (HRL), Cross-entropy optimization
+        \item \textbf{Quantum Machine Learning:} Reinforcement learning (RL), Quantum Multi-agent reinforcement learning (QMARL), Quantum Federated Learning (QFL), Quantum Split Learning (QSL)
+    \end{enumerate}
+\item \textbf{Applications:} \begin{enumerate}
+    \item \textbf{Wireless Communication \& Networking:} Caching, Relaying network, Broadcasting, Air-to-ground communication
+    \item \textbf{Urban Aerial Mobility}: UAV trajectory optimization, UAV surveillance, UAV relaying
+    \item \textbf{Distributed Computing/Networking:} RL applications, FL/SL applications
+    \item \textbf{Quantum Computing:} Quantum MARL, Quantum DRL
+\end{enumerate}
+\end{itemize}
+
+\spacedhrule{0.0em}{-0.8em}
+\roottitle{Educational and Academic Backgrounds}
+
+\begin{itemize}\itemsep=-0.8mm
+\item \textbf{Korea University}, Seoul, Republic of Korea
+    \\ -- Ph.D./M.S. (03/2021--08/2024 (Expected)) in {Electrical and Computer Engineering} (Advisor: Prof. Joongheon Kim)
+    \\ -- Intern. (02/2020--02/2021) in Artificial Intelligence and Mobility (AIM) Laboratory (Advisor: Prof. Joongheon Kim)
+    \\ -- B.S. (03/2015--02/2021) in Electrical Engineering 
+\end{itemize}
+
+
+\spacedhrule{0.0em}{-0.8em}
+\roottitle{Awards and Honors}
+
+\begin{itemize}\itemsep=-0.8mm
+\item \textbf{KICS Best Paper Award}/\textbf{KICS Best Student Award} (06/2021)
+\item \textbf{IEEE ICOIN Best Paper Award} (01/2021)
+\item \textbf{KICS Fall Conference Paper Award} (10/2020)
+\item \textbf{KICS Summer Paper Award} (06/2020)
+  \end{itemize}
+
+\spacedhrule{0.0em}{-0.8em}
+\roottitle{R\&D Positions}%\roottitle{Positions Held}
+
+\begin{itemize}\itemsep=-0.8mm
+    \item \textbf{Korea University}, Seoul, Republic of Korea
+    \\ -- \textit{Ph.D./M.S. Research Assistant (02/2021--Present)}, Artificial Intelligence and Mobility Laboratory (Advisor: Prof. Joongheon Kim)
+    \\ -- \textit{Research Intern (02/2020--02/2021)}, Artificial Intelligence and Mobility Laboratory (Advisor: Prof. Joongheon Kim)
+\end{itemize}
+\iffalse
+\spacedhrule{0.0em}{-0.8em}
+\roottitle{R\&D Projects}
+
+\begin{itemize} \itemsep=-0.8mm
+    \item \textbf{Integrated Perception Technology Developments for Public Safety Platforms} (06/2019--05/2023)
+    \\ Funded by \textit{National Research Foundation of Korea} and \textit{Korean National Police Agency} [2019M3E3A1084054]
+    
+    \item \textbf{Virtual Presence in Moving Objects through 5G (PriMO-5G)} (06/2018--05/2021)
+    \\ Funded by \textit{Institute for Information and Communications Technology Promotion (IITP)} [2018-0-00170], with Yonsei University, KAIST, KT, EUCAST, and European Partners
+    \item \textbf{Econometric Theory and Artificial Intelligence Applications to Mobile Base Station Design} (03/2020--02/2021)
+        \\ Funded by \textit{Korea University Future Research Grant (KU-FRG)} [K2007091]
+    
+    \end{itemize}
+\fi
+\spacedhrule{0.0em}{-0.8em}
+\roottitle{Publications (International)}
+
+
+\headedsection
+  {\textbf{Magazines and Journals}}
+  {} {
+      \vspace{0.3mm}
+      \vspace{-0.7mm}
+      \begin{itemize} \itemsep=-0.1mm
+      \item[]
+      \begin{itemize}
+         \item[\textsf{[J.08]}] B. Lim, \underbar{W. J. Yun}, J. Kim, and Y. -C. Ko, ``Joint Pilot Design and Channel Estimation using Deep Residual Learning for Multi-Cell Massive MIMO under Hardware Impairments," \textit{IEEE Transactions on Vehicular Technology} (TVT). 
+         \item[\textsf{[J.07]}] \underbar{W. J. Yun}, M. Shin, S. Jung, and J. Kim, ``Parallelized and Randomized Adversarial Imitation Learning for Safety-Critical Self-Driving Vehicles," \textit{IEEE/KICS Journal Communications Networks} (JCN).
+          \item[\textsf{[J.06]}] 
+          \underbar{W. J. Yun},  S. Park, J. Kim, M. Shin, S. Jung, D. Mohaisen, and J.-H. Kim, "Cooperative Multi-Agent Deep Reinforcement Learning for Reliable Surveillance via Autonomous Multi-UAV Control" \textit{IEEE Transactions on Industrial Informatics} (TII), Early Access.
+          \item[\textsf{[J.05]}] 
+          \underbar{W. J. Yun}, D. Kwon, M. Choi, J. Kim, G. Caire, and A. Molisch, "Quality-Aware Deep Reinforcement Learning for Streaming in Infrastructure-Assisted Connected Vehicles," \textit{IEEE Transactions on Vehicular Technology}, vol. 71, no.2, pp. 2002-2017, February 2022.
+          \item[\textsf{[J.04]}] 
+          G. Lee, \underbar{W. J. Yun}, Y.J. Ha, S. Jung, J.Y. Kim, S. Hong, J. Kim, Y. K. Lee, "Measurement Study of Real-Time Virtual Reality Contents Streaming over IEEE 802.11 ac Wireless Links," \textit{MDPI Electronics} vol. 10, no. 16, pp. 1967, 2021.
+          \item[\textsf{[J.03]}] 
+          S. Jung, \underbar{W. J. Yun}, M. Shin, J. Kim, J. -H. Kim, "Orchestrated Scheduling and Multi-Agent Deep Reinforcement Learning for Cloud-Assisted Multi-UAV Charging Systems," \textit{IEEE Transactions on Vehicular Technology}, vol. 70, no. 6, June 2021.
+          \item[\textsf{[J.02]}] 
+          \underbar{W. J. Yun}, S. Jung, J. Kim, J. -H. Kim, "Distributed Deep Reinforcement Learning for Autonomous Aerial eVTOL Mobility in Drone Taxi Applications," \textit{ICT Express}, vol. 7, no. 1, March 2021.
+          \item[\textsf{[J.01]}] 
+          S. Jung, \underbar{W. J. Yun}, J. Kim, J. -H. Kim, "Coordinated Multi-Agent Deep Reinforcement Learning for Energy-Aware UAV-Based Big-Data Platforms," \textit{Electronics}, vol. 10, no. 5, February 2021.
+      
+         \end{itemize}
+         \end{itemize}
+}
+
+
+
+\headedsection
+  {\textbf{Conferences}}
+  {} {
+      \vspace{0.3mm}
+      \vspace{-0.7mm}
+      \begin{itemize} \itemsep=-0.1mm
+      \item[]
+      \begin{itemize}
+      \item[\textsf{[C.13]}] 
+        \underbar{W. J. Yun}, Y. Kwak, J.P. Kim, H. Lee, S. Jung, J. Park and J. Kim, "Quantum Multi-Agent Reinforcement Learning via Variational Quantum Circuit Design," in \textit{Proc. International Conference on Distributed Computing Systems} (ICDCS), Bologna Italy,  July 2022.
+      \item[\textsf{[C.12]}] 
+      H. Baek, \underbar{W. J. Yun}, Y. Kwak, S. Jung, M. Ji, M. Bennis, J. Park, J. Kim, "Joint Superposition Coding and Training for Federated Learning over Multi-Width Neural Networks," in Proc. INFOCOM, May 2-5, 2022, London, England (Virtual).
+      \item[\textsf{[C.11]}] 
+      Y. Kim, \underbar{W. J. Yun}, Y.K. Lee, S. Jung, J. Kim, "Trends in Neural Architecture Search: Towards the Acceleration of Search," in \textit{Proc. IEEE ICTC}, Oct. 20-22, 2021, Jeju Island, Korea.
+      \item[\textsf{[C.10]}] 
+      W. J. Yun, Y. Ha,  S. Jung,  J. Kim, "Autonomous Aerial Mobility Learning for Drone-Taxi Flight Control," in\textit{ Proc. IEEE ICTC}, Oct. 20-22, 2021, Jeju Island, Korea.
+      \item[\textsf{[C.09]}] Y. Kwak,\underbar{W. J. Yun}, S. Jung, J. -K. Kim, J. Kim, "Introduction to Quantum Reinforcement Learning: Theory and PennyLane-based Implementation," in \textit{Proc. IEEE ICTC}, Oct. 20-22, 2021, Jeju Island, Korea.
+      
+      \item[\textsf{[C.08]}] Y. Kwak, \underbar{W. J. Yun}, S. Jung, J. Kim, "Quantum Neural Networks: Concepts, Applications, and Challenges" in \textit{Proc. IEEE ICUFN}, Aug.17, 2021, Jeju Island, Korea.
+      
+      \item[\textsf{[C.07]}] H. Baek, \underbar{W. J. Yun}, S. Jung, M. Ji, J. Park, J. Kim, and  M. Bennis, "Communication and Energy Efficient Slimmable Federated Learning via Superposition Coding and Successive Decoding," in \textit{Proc. ICML Wksp. Federated Learning}, Virtual, July 2021.
+      
+      \item[\textsf{[C.06]}] \underbar{W. J. Yun}, B. Lim, S. Jung, Y. -C Ko, J. Park, J. Kim and M. Bennis "Attention-based Reinforcement Learning for Real-Time UAV Semantic Communication," in \textit{Proc. IEEE ISWCS}, Berlin, Germany, September 2021. 
+      
+      \item[\textsf{[C.05]}] \underbar{W. J. Yun}, S. Yi and J. Kim, "Multi-Agent Deep Reinforcement Learning using Attentive Graph Neural Architectures for Real-Time Strategy Games," in \textit{Proc. IEEE SMC}, Melbourne, Australia, October 2021. 
+      
+      \item[\textsf{[C.04]}] G. Lee, \underbar{W. J. Yun}, S. Jung, J. Kim and J. -H. Kim, "Visualization of Deep Reinforcement Autonomous Aerial Mobility Learning Simulations," in \textit{Proc. IEEE INFOCOM}, Virtual, May 2021. (Demo)
+      
+      \item[\textsf{[C.03]}] J. Kim, M. Shin, D. Kim, S. Park, Y. Kang, J. Kim, H. Lee, \underbar{W. J. Yun}, J. Choi, S. Park, S. Oh, and J. Yoo , "Performance Comparison of SRCNN, VDSR, and SRDenseNet Deep Learning Models in Embedded Autonomous Driving Platforms," in \textit{Proc. IEEE ICOIN}, Jeju Island, Korea, January 2021.
+      
+      \item[\textsf{[C.02]}] S. Jung, \underbar{W. J. Yun}, J. Kim, J. -H. Kim, "Infrastructure-Assisted Cooperative Multi-UAV Deep Reinforcement Energy Trading Learning for Big-Data Processing," in \textit{Proc. IEEE ICOIN}, Jeju Island, Korea, January 2021.
+      \\ {\color{blue}\textit{\textbf{(IEEE ICOIN Best Paper Award)}}}
+      
+      \item[\textsf{[C.01]}] \underbar{W. J. Yun}, and J. Kim, "3D Modeling and WebVR Implementation using Azure Kinect, Open3D, and Three.js," in \textit{Proc. IEEE ICTC}, Jeju Island, Korea, October 2020. 
+      
+         \end{itemize}
+         \end{itemize}
+}
+
+\headedsection
+  {\textbf{Preprint (Revision \& Under Review)}}
+  {} {
+      \vspace{0.3mm}
+      \vspace{-0.7mm}
+      \begin{itemize} \itemsep=-0.1mm
+      \item[]
+      \begin{itemize}
+      \item[$\square$] 
+            \underbar{W. J. Yun}, J. P. Kim, S. Jung, J. Park, M. Bennis and J. Kim, "Slimmable Quantum Federated Learning," \textit{ICML Wksp. Dynn}.
+      \item[$\square$] 
+            \underbar{W. J. Yun}, J. Park, and J. Kim, "Double-Blind," \textit{Neural Information Processing Systems} (NeurIPS).
+          \item[$\square$] \underbar{W. J. Yun}, J. -K. Kim, D. Mohaisen, and J. Kim, ``Double Blind," \textit{ACM International Conference on Information and Knowledge Management} (CIKM).
+          \item[$\square$] \underbar{W. J. Yun}, S. Park, D. Mohaisen and J. Kim, ``Self-Configurable Stabilized Real-Time Detection Learning for Autonomous Driving Applications," \textit{IEEE Transactions on Intelligent Transportation Systems} (T-ITS).
+          \item[$\square$] \underbar{W. J. Yun}, M. Shin, D. Mohaisen, K. Lee, and J. Kim, ``Hierarchical Deep Reinforcement Learning-based Propofol Infusion Assistant Framework in Anesthesia," \textit{IEEE Transactions on Neural Networks and Learning Systems} (TNNLS).
+          \item[$\square$] \underbar{W. J. Yun}, Y. Kwak, H. Baek, S. Jung, M. Ji, M. Bennis, J. Park, J. Kim, "SlimFL: Federated Learning with Superposition Coding over Slimmable Neural Networks," \textit{IEEE/ACM Transactions on Networking} (TON)
+          \item[$\square$] \underbar{W. J. Yun},  M. Shin, S. Jung, K. Lee, J. Ko, H. Lee, J. Kim, ``Deep Reinforcement Learning-based Propofol Infusion Control for Anesthesia: A Feasibility Study with a 3,000-subject Dataset," \textit{IEEE Transactions on Control Systems Technology} (TCST)
+          \item[$\square$] 
+            Y. Kwak,\underbar{W. J. Yun}, J.P. Kim, H.Lee, M. Choi, S. Jung, and J. Kim, "Quantum Heterogeneous Distributed Deep Learning Architectures: Models, Discussions, and Applications," \textit{ICT Express}.
+          \item[$\square$] B. Lim, \underbar{W. J. Yun}, J. Kim, and Y.-C. Ko, ``Joint User Clustering and Beamforming using Cross-Entropy based Machine Learning for mmWave-NOMA with Imperfect SIC," \textit{IEEE Transactions on Wireless Communications} (TWC).
+          \item[$\square$] M. Choi, \underbar{W. J. Yun}, and J. Kim, ``Delay-Sensitive and Power-Efficient Quality Control of Dynamic Video Streaming using Adaptive Super-Resolution," \textit{IEEE Internet of Things Jorunal}. (IoTJ)
+          \item[$\square$] Y. Lee,\underbar{W. J. Yun}, Y. K. Lee, and J. Kim, "Two-Stage Architectural Fine-Tuning with Neural Architecture Search using Early-Stopping in Image Classification," in \textit{Proc. IEEE Transactions on System, Man, Cybernetics: System} (TSMC).
+         \end{itemize}
+         \end{itemize}
+}
+
+
+       
+
+%\spacedhrule{0.0em}{-0.8em}
+%\roottitle{Teaching Experience and Research Supervision}
+%\headedsection
+%  {Teaching Experience}
+% {} {
+%  \headedsubsection
+%    {Chung-Ang University -- College of Computer Science and Software, \textit{Faculty Member}}{}{
+%    \vspace{-0.7mm}
+%        \begin{itemize}\itemsep=-0.1mm
+%        \item \textbf{School of Computer Science and Engineering -- Graduate Courses:} 
+%            \textit{Optimal Design Theory and Applications} (Spring 2019, Spring 2018, Spring 2017);
+%        \end{itemize}
+%    }
+%}
+
+%\spacedhrule{0.0em}{-0.8em}
+%\roottitle{Professional Activities}
+%    \vspace{-1mm}
+%    \headedsection
+%  {Academic Activities and Services}
+%  {} {
+%    \vspace{-1mm}
+%  \headedsubsection
+%    {Conference Activities}
+%    {}
+%    {
+%    \vspace{-0.7mm}
+%      \begin{itemize}\itemsep=-0.1mm
+%        \item \textbf{OC Patronage Chair}, 2022 IEEE International Conference on Communications (ICC)
+%        \end{itemize}
+%    }
+%}
+
+\spacedhrule{0.0em}{-0.8em}
+
+\roottitle{Computer Languages}
+\begin{itemize}\itemsep=-0.2mm
+    \item \textbf{Excellent}: Python (Tensorflow, Pytorch, Scikit-learn, Numpy, Pandas, Matplotlib), Latex
+    \item \textbf{Good}: Matlab,  Javascript, CSS
+    \item \textbf{Basic}: C, C++, C\#
+\end{itemize}
+\spacedhrule{0.0em}{-0.8em}
+
+\roottitle{References}
+\begin{itemize}\itemsep=-0.2mm
+    \item \textbf{Prof. Joongheon Kim}, \textit{Ph.D. Research and Dissertation Advisor}
+    \\ -- Associate Professor, Korea University, Seoul, Republic of Korea
+    \\ -- URL: \url{https://joongheon.github.io}
+\end{itemize}
+\end{document} 
